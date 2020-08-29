@@ -1,0 +1,36 @@
+%% This file contains only a table.
+%% this file is included into Chapter8
+
+\begin{table}[htbp!]
+   \setlength{\arrayrulewidth}{0.1mm}
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.0}
+
+    \centering{}
+ 
+    \caption{Source Quality metrics: Qualitative}
+    \label{table:source-quality}
+    
+    \begin{tabularx}{\linewidth}{| p{1.11cm}|p{2.50cm}|p{4cm}|p{1.05cm}|p{3.7cm}|} 
+    
+%    |a|>{\columncolor[HTML]{FFFFFF}}C|C|C|
+     \arrayrulecolor[HTML]{06000A}
+        %% Table Body
+        \hline
+        \rowcolor[HTML]{5789F3} 
+        \multicolumn{5}{|c|}{Quantitative based metrics} \\
+        \hline
+        
+        \rowcolor[HTML]{ECB4E8} serial \# & Parameter type & Parameter Description & Symbol & Math Formula  \\
+        \hline
+ 1	&	Extensiveness	&	Evaluates how many optional parameters are filled in	&	p1	&	\[p1 = \frac{1}{z}\sum\limits_{n=1}^{z}(\frac{oi}{\max y_i}) \]	\\ 
+  
+\hline
+    \end{tabularx}
+
+\end{table}
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+\chapter{Artefact Design} % Main appendix title
+
+\label{AppendixChapter8} 
+\label{AppendixD} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+\section{Apply archiving to already processed data}
+\begin{lstlisting}[language=SQL]
+--Update Already processed data
+update freshrss.on2itashishranjan_entry c set c.aging =1 
+where c.aging =0 ;
+
+--Delete old data
+drop table freshrss.on2it_context ; 
+--or
+delete from  freshrss.on2it_context;
+
+
+\end{lstlisting}
+\label{tag-archiving}
+\clearpage
+
+%Importing code from file
+\section{Filter to context cyber newsfeed}
+\lstinputlisting[language=SQL]{Appendices/filter_context.sql}
+\label{filter-context}
+\clearpage
+
+\clearpage
+
+%Importing code from file
+\section{Function to Apply TAG}
+\lstinputlisting[language=SQL]{Appendices/function-sql-addtag.sql}
+\label{tag-addtag}
+\clearpage
+%\lstinputlisting[language=Octave, caption=Octave sample code]{BitXorMatrix.m}
+\section{PHP code to RSS feed}
+\lstinputlisting[language=PHP]{Appendices/rss_send.php}
+\label{rss-send}
+\clearpage

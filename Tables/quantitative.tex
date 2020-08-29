@@ -1,0 +1,53 @@
+%% This file contains only a table.
+%% this file is included into Chapter8
+
+\begin{table}[bp!]
+   \setlength{\arrayrulewidth}{0.1mm}
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.0}
+
+    \centering{}
+ 
+    \caption{Source Quality metrics: Quantitative \citep{schaberreiter2019quantitative} }
+    \label{table:quantitative}
+    
+    \begin{tabularx}{\linewidth}{| p{0.82cm}|p{2.50cm}|p{5.25cm}|p{1.1cm}|c|} 
+    
+%    |a|>{\columncolor[HTML]{FFFFFF}}C|C|C|
+     \arrayrulecolor[HTML]{06000A}
+        %% Table Body
+        \hline
+        \rowcolor[HTML]{5789F3} 
+        \multicolumn{5}{|c|}{Quantitative based metrics} \\
+        \hline
+        
+        \rowcolor[HTML]{ECB4E8} Serial \#  & Parameter type & Parameter Description & Symbol & Math Formula  \\
+        \hline
+ 1	&	Extensiveness	&	Evaluates how many optional parameters are filled in	&	p1	&	$p1 = \frac{1}{z}\sum\limits_{n=1}^{z}(\frac{oi}{\max y_i}) $	\\ 
+  \hline
+ 2	&	Maintenance	&	Determines how often messages are updated	&	p2	&	$p2 =  \|\frac{\frac{1}{z}\sum_{i=1}^{z}u_i}{avg(p_2s_1 \cdots p_2s_n)}\| $	\\
+  \hline
+3	&	False Positives	&	Determines how often messages of a source are invalidated	&	p3	&	$p3 = 1 - (\frac{{F_s}_x}{\sum_{i=1}^{n}{F_s}_i}) $	\\
+ \hline
+4	&	Verifiability	&	Expresses how often a source verifies the information they provide by linking their source	&	p4	&	$p4 =  \|\frac{\|\frac{1}{z}\sum_{i=1}^{z}r_i\|}{avg(p_4s_1 \cdots p_4s_n)}\| $	\\
+ \hline
+5	&	Intelligence	&	Indicates how much added value a source offers in their messages by linking it to other objects	&	p5	&	$p5 =  \|\frac{\|\frac{1}{z}\sum_{i=1}^{z}l_i\|}{avg(p_5s_1 \cdots p_5s_n)}\| $	\\
+ \hline
+6	&	Interoperability	&	Based on which data format a source provides their data in	&	p6	&	$p6 = \sum\limits_{n=1}^{n}(\frac{b_i}{n}) $	\\
+ \hline
+7	&	Compliance	&	Determines how compliant a source is to the standard they use	&	p7	&	$p7 =  \|\frac{\frac{1}{z}\sum_{i=1}^{z}c_i}{avg(p_7s_1 \cdots p_7s_n)}\| $	\\
+ \hline
+8	&	Similarity	&	Evaluates how similar specific entries of two sources are	&	p8	&	$p8 = \frac{1}{z}\sum\limits_{i=1}^{z}(y_i) $	\\
+ \hline
+9	&	Timeliness	&	Analyses which source provides information the quickest	&	p9	&	$p9 = \frac{1}{z}\sum\limits_{i=1}^{z}(\frac{\min t_i}{(ts)_i}) $	\\
+ \hline
+10	&	Completeness	&	Indicates how much of the entire world a single source represents	&	p10	&	$p10 = \frac{|B|-|A|}{|B|}$	\\
+\hline
+    \end{tabularx}
+
+\end{table}
+
+
+
+
+
